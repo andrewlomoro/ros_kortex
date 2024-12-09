@@ -164,7 +164,9 @@
 
         <!-- Start RViz -->
         <node name="rviz" pkg="rviz" type="rviz" if="$(arg start_rviz)"/> 
-    
+        
+        <remap from="/joint_states" to="/my_gen3/joint_states" />
+
     </group>
 
 </launch>
